@@ -7,3 +7,9 @@ abstract class WidgetGuideEvent extends Equatable {
 }
 
 class FetchWidgetGuides extends WidgetGuideEvent {}
+
+class SearchQueryChanged extends WidgetGuideEvent {
+  final String query;
+
+  const SearchQueryChanged({required this.query});
+}

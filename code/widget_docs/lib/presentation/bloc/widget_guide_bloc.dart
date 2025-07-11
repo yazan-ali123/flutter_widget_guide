@@ -18,5 +18,15 @@ class WidgetGuideBloc extends Bloc<WidgetGuideEvent, WidgetGuideState> {
         emit(WidgetGuideError(e.toString()));
       }
     });
+    on<SearchQueryChanged>((event, emit) async {
+      emit(WidgetGuideLoading());
+      try {
+        final guides = await getWidgetGuides();
+        guides.retainWhere((item) => item.name.contains(event.query));
+        emit(WidgetGuideLoaded(guides));
+      } catch (e) {
+        emit(WidgetGuideError(e.toString()));
+      }
+    });
   }
 }

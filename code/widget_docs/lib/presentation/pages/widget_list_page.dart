@@ -4,8 +4,30 @@ import 'package:widget_docs/presentation/bloc/widget_guide_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:widget_docs/presentation/pages/widget_detail_page.dart';
 
-class WidgetListPage extends StatelessWidget {
+class WidgetListPage extends StatefulWidget {
   const WidgetListPage({Key? key}) : super(key: key);
+
+  @override
+  State<WidgetListPage> createState() => _WidgetListPageState();
+}
+
+class _WidgetListPageState extends State<WidgetListPage> {
+  TextEditingController controller = TextEditingController();
+  @override
+  void initState() {
+    super.initState();
+    controller.addListener(() {
+      context.read<WidgetGuideBloc>().add(
+        SearchQueryChanged(query: controller.text),
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +42,31 @@ class WidgetListPage extends StatelessWidget {
           if (state is WidgetGuideLoading || state is WidgetGuideInitial) {
             return const Center(child: CircularProgressIndicator());
           } else if (state is WidgetGuideLoaded) {
-            return ListView.builder(
-              padding: const EdgeInsets.all(8.0),
-              itemCount: state.guides.length,
-              itemBuilder: (context, index) {
-                final guide = state.guides[index];
-                return _buildWidgetListItem(context, guide);
-              },
+            return Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextField(
+                    controller: controller,
+                    onChanged: (value) {
+                      context.read<WidgetGuideBloc>().add(
+                        SearchQueryChanged(query: controller.text),
+                      );
+                    },
+                    decoration: InputDecoration(hintText: 'Search...'),
+                  ),
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    padding: const EdgeInsets.all(8.0),
+                    itemCount: state.guides.length,
+                    itemBuilder: (context, index) {
+                      final guide = state.guides[index];
+                      return _buildWidgetListItem(context, guide);
+                    },
+                  ),
+                ),
+              ],
             );
           } else if (state is WidgetGuideError) {
             return Center(
