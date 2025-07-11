@@ -1,0 +1,440 @@
+[
+  {
+    "name": "SafeArea",
+    "description": "A widget that insets its child by sufficient padding to avoid intrusions by the operating system.",
+    "youtubeVideoId": "lkF0Y-9j-eA",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/SafeArea-class.html"
+  },
+  {
+    "name": "Expanded",
+    "description": "A widget that expands a child of a Row, Column, or Flex so that the child fills the available space.",
+    "youtubeVideoId": "TSV_s_1q2PA",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Expanded-class.html"
+  },
+  {
+    "name": "Wrap",
+    "description": "A widget that displays its children in multiple horizontal or vertical runs.",
+    "youtubeVideoId": "z5iw2SeFx2M",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Wrap-class.html"
+  },
+  {
+    "name": "AnimatedContainer",
+    "description": "A container that gradually changes its values over a period of time.",
+    "youtubeVideoId": "yI-8QHpGIP4",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html"
+  },
+  {
+    "name": "Opacity",
+    "description": "A widget that makes its child partially transparent.",
+    "youtubeVideoId": "9hltevOHSPo",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Opacity-class.html"
+  },
+  {
+    "name": "FutureBuilder",
+    "description": "Widget that builds itself based on the latest snapshot of an interaction with a Future.",
+    "youtubeVideoId": "ekdD2bV0_1w",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html"
+  },
+  {
+    "name": "FadeTransition",
+    "description": "Animates the opacity of a widget.",
+    "youtubeVideoId": "rLwEkvY8o_s",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/FadeTransition-class.html"
+  },
+  {
+    "name": "FloatingActionButton",
+    "description": "A circular icon button that hovers over content to promote a primary action in the application.",
+    "youtubeVideoId": "2uaoEDOgk_I",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/FloatingActionButton-class.html"
+  },
+  {
+    "name": "PageView",
+    "description": "A scrollable list that works page by page.",
+    "youtubeVideoId": "J1gE9p_S_7k",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/PageView-class.html"
+  },
+  {
+    "name": "Table",
+    "description": "A widget that uses a table layout algorithm for its children.",
+    "youtubeVideoId": "qr_y291xY_I",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Table-class.html"
+  },
+  {
+    "name": "SliverAppBar",
+    "description": "A material design app bar that integrates with a CustomScrollView.",
+    "youtubeVideoId": "R9C5KMht_lA",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/SliverAppBar-class.html"
+  },
+  {
+    "name": "SliverList and SliverGrid",
+    "description": "Slivers that place their children in a linear or two-dimensional array.",
+    "youtubeVideoId": "ORiTTaVY6mM",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/SliverList-class.html"
+  },
+  {
+    "name": "FadeInImage",
+    "description": "A widget that displays a placeholder while an image is loading, then fades in the new image.",
+    "youtubeVideoId": "pK738Pg9cxc",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/FadeInImage-class.html"
+  },
+  {
+    "name": "StreamBuilder",
+    "description": "Widget that builds itself based on the latest snapshot of an interaction with a Stream.",
+    "youtubeVideoId": "MkKEWHfy99Y",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html"
+  },
+  {
+    "name": "InheritedModel",
+    "description": "An InheritedWidget that allows clients to subscribe to only part of the model.",
+    "youtubeVideoId": "ml5-L0h_I40",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/InheritedModel-class.html"
+  },
+  {
+    "name": "ClipRRect",
+    "description": "A widget that clips its child using a rounded rectangle.",
+    "youtubeVideoId": "eI43jkQkrvs",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ClipRRect-class.html"
+  },
+  {
+    "name": "Hero",
+    "description": "A widget that marks its child as a candidate for hero animations.",
+    "youtubeVideoId": "Be9UH1kXFDw",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Hero-class.html"
+  },
+  {
+    "name": "CustomPaint",
+    "description": "A widget that provides a canvas on which to draw during the paint phase.",
+    "youtubeVideoId": "kp14Y4uHpHs",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/CustomPaint-class.html"
+  },
+  {
+    "name": "Tooltip",
+    "description": "A material design tooltip.",
+    "youtubeVideoId": "AhIFdw_o_K4",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/Tooltip-class.html"
+  },
+  {
+    "name": "FittedBox",
+    "description": "Scales and positions its child within itself according to fit.",
+    "youtubeVideoId": "T4Uehk3_wlY",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/FittedBox-class.html"
+  },
+  {
+    "name": "LayoutBuilder",
+    "description": "Builds a widget tree that can depend on the parent widget's size.",
+    "youtubeVideoId": "IYDVH_YBE1I",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html"
+  },
+  {
+    "name": "AbsorbPointer",
+    "description": "A widget that absorbs pointers during hit testing.",
+    "youtubeVideoId": "65SkBw4Ff2g",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/AbsorbPointer-class.html"
+  },
+  {
+    "name": "Transform",
+    "description": "A widget that transforms its child using a matrix.",
+    "youtubeVideoId": "9z_YNl_R_v8",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Transform-class.html"
+  },
+  {
+    "name": "Stack",
+    "description": "A widget that positions its children relative to the edges of its box.",
+    "youtubeVideoId": "liKhl6-Ld44",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Stack-class.html"
+  },
+  {
+    "name": "AnimatedIcon",
+    "description": "An animated icon that is drawn with a Canvas.",
+    "youtubeVideoId": "pJcbh8_44kM",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/AnimatedIcon-class.html"
+  },
+  {
+    "name": "Spacer",
+    "description": "A widget that takes up space in a Flex container, such as a Row or Column.",
+    "youtubeVideoId": "7vIq-dJ9i-E",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Spacer-class.html"
+  },
+  {
+    "name": "MediaQuery",
+    "description": "Establishes a subtree in which media queries resolve to the given data.",
+    "youtubeVideoId": "A3WrA4zAa_Q",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/MediaQuery-class.html"
+  },
+  {
+    "name": "LimitedBox",
+    "description": "A box that limits its size only when it's unconstrained.",
+    "youtubeVideoId": "uVki2CIz4-w",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/LimitedBox-class.html"
+  },
+  {
+    "name": "Placeholder",
+    "description": "A widget that draws a box that represents where other widgets will one day be added.",
+    "youtubeVideoId": "LPe56gkmjNk",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Placeholder-class.html"
+  },
+  {
+    "name": "RichText",
+    "description": "A widget that displays text with multiple styles.",
+    "youtubeVideoId": "rykDVh-Yxfs",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/RichText-class.html"
+  },
+  {
+    "name": "ReorderableListView",
+    "description": "A list whose items the user can interactively reorder by dragging.",
+    "youtubeVideoId": "3fB1mxOsqJE",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/ReorderableListView-class.html"
+  },
+  {
+    "name": "AnimatedSwitcher",
+    "description": "A widget that by default does a cross-fade between a new widget and the widget previously set on the AnimatedSwitcher as a child.",
+    "youtubeVideoId": "2W7POjW5a_E",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/AnimatedSwitcher-class.html"
+  },
+  {
+    "name": "AnimatedPositioned",
+    "description": "Animated version of Positioned which automatically transitions the child's position over a given duration whenever the given position changes.",
+    "youtubeVideoId": "hC3s2Ydt_s0",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html"
+  },
+  {
+    "name": "AnimatedPadding",
+    "description": "Animated version of Padding which automatically transitions the indentation over a given duration whenever the given inset changes.",
+    "youtubeVideoId": "Y_AlT3_2JSs",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/AnimatedPadding-class.html"
+  },
+  {
+    "name": "IndexedStack",
+    "description": "A Stack that shows a single child from a list of children.",
+    "youtubeVideoId": "hR_LeCso2A0",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/IndexedStack-class.html"
+  },
+  {
+    "name": "Semantics",
+    "description": "A widget that annotates the widget tree with a description of the meaning of the widgets.",
+    "youtubeVideoId": "N1-JEd_8VbU",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Semantics-class.html"
+  },
+  {
+    "name": "ConstrainedBox",
+    "description": "A widget that imposes additional constraints on its child.",
+    "youtubeVideoId": "o2KveVr7adg",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ConstrainedBox-class.html"
+  },
+  {
+    "name": "FractionallySizedBox",
+    "description": "A widget that sizes its child to a fraction of the total available space.",
+    "youtubeVideoId": "PEsY654EGZ0",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/FractionallySizedBox-class.html"
+  },
+  {
+    "name": "ListView",
+    "description": "A scrollable, linear list of widgets.",
+    "youtubeVideoId": "KJpkjH2OtaA",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ListView-class.html"
+  },
+  {
+    "name": "ListTile",
+    "description": "A single fixed-height row that typically contains some text as well as a leading or trailing icon.",
+    "youtubeVideoId": "l8dj0yK_Alw",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/ListTile-class.html"
+  },
+  {
+    "name": "Container",
+    "description": "A convenience widget that combines common painting, positioning, and sizing widgets.",
+    "youtubeVideoId": "c1xLMaTUWCY",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Container-class.html"
+  },
+  {
+    "name": "SelectableText",
+    "description": "A widget that displays a string of text with an option to select, copy, and search.",
+    "youtubeVideoId": "ZzFRvS2I3g4",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/SelectableText-class.html"
+  },
+  {
+    "name": "DataTable",
+    "description": "A material design data table.",
+    "youtubeVideoId": "ktv_2_V0_e4",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/DataTable-class.html"
+  },
+  {
+    "name": "Slider",
+    "description": "A material design slider.",
+    "youtubeVideoId": "ufb4gIPDmEs",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/Slider-class.html"
+  },
+  {
+    "name": "AlertDialog",
+    "description": "A material design alert dialog.",
+    "youtubeVideoId": "75CsouO_4Lg",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/AlertDialog-class.html"
+  },
+  {
+    "name": "AnimatedList",
+    "description": "A scrolling container that animates items when they are inserted or removed.",
+    "youtubeVideoId": "ZtfItHwFlZ8",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/AnimatedList-class.html"
+  },
+  {
+    "name": "Flexible",
+    "description": "A widget that controls how a child of a Row, Column, or Flex flexes.",
+    "youtubeVideoId": "CI7x0soosOU",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Flexible-class.html"
+  },
+  {
+    "name": "Draggable",
+    "description": "A widget that can be dragged from to a DragTarget.",
+    "youtubeVideoId": "Qk_udG772_s",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Draggable-class.html"
+  },
+  {
+    "name": "AnimatedBuilder",
+    "description": "A general-purpose widget for building animations.",
+    "youtubeVideoId": "N-RiyZ_v-sY",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html"
+  },
+  {
+    "name": "Dismissible",
+    "description": "A widget that can be dismissed by dragging in the indicated direction.",
+    "youtubeVideoId": "iEMgjI-N0_E",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Dismissible-class.html"
+  },
+  {
+    "name": "SizedBox",
+    "description": "A box with a specified size.",
+    "youtubeVideoId": "EHPu_DzR3mY",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/SizedBox-class.html"
+  },
+  {
+    "name": "ValueListenableBuilder",
+    "description": "A widget whose content is based on a ValueListenable.",
+    "youtubeVideoId": "s-ZG-jS5QAs",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ValueListenableBuilder-class.html"
+  },
+  {
+    "name": "DraggableScrollableSheet",
+    "description": "A container for a scrollable that responds to drag gestures.",
+    "youtubeVideoId": "HgwCeNVPlo0",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/DraggableScrollableSheet-class.html"
+  },
+  {
+    "name": "ColorFiltered",
+    "description": "A widget that applies a ColorFilter to its child.",
+    "youtubeVideoId": "F7Cll22s_yM",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ColorFiltered-class.html"
+  },
+  {
+    "name": "ToggleButtons",
+    "description": "A horizontal set of toggle buttons.",
+    "youtubeVideoId": "kVEgX41G_sA",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/ToggleButtons-class.html"
+  },
+  {
+    "name": "CupertinoActionSheet",
+    "description": "An iOS-style action sheet.",
+    "youtubeVideoId": "U-Xw_KCWG4o",
+    "documentationUrl": "https://api.flutter.dev/flutter/cupertino/CupertinoActionSheet-class.html"
+  },
+  {
+    "name": "TweenAnimationBuilder",
+    "description": "A widget that animates a property of a child widget to a target value.",
+    "youtubeVideoId": "d_m5c3i1ztg",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/TweenAnimationBuilder-class.html"
+  },
+  {
+    "name": "Image",
+    "description": "A widget that displays an image.",
+    "youtubeVideoId": "7oIAs-0G4mw",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Image-class.html"
+  },
+  {
+    "name": "DefaultTabController",
+    "description": "Coordinates tab selection for a TabBar and a TabBarView.",
+    "youtubeVideoId": "POd3_pTm5vU",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/DefaultTabController-class.html"
+  },
+  {
+    "name": "Drawer",
+    "description": "A material design panel that slides in horizontally from the edge of a Scaffold to show navigation links in an application.",
+    "youtubeVideoId": "Nkk4hVDE7_I",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/Drawer-class.html"
+  },
+  {
+    "name": "SnackBar",
+    "description": "A lightweight message with an optional action which briefly displays at the bottom of the screen.",
+    "youtubeVideoId": "z_Qv2soS-k8",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/SnackBar-class.html"
+  },
+  {
+    "name": "ListWheelScrollView",
+    "description": "A box in which children on a wheel can be scrolled.",
+    "youtubeVideoId": "dU5_M5_j-fM",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ListWheelScrollView-class.html"
+  },
+  {
+    "name": "ShaderMask",
+    "description": "A widget that applies a mask generated by a Shader to its child.",
+    "youtubeVideoId": "qC5Kk-5iE5s",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ShaderMask-class.html"
+  },
+  {
+    "name": "NotificationListener",
+    "description": "A widget that listens for Notifications bubbling up the tree.",
+    "youtubeVideoId": "cAnFbFoGM50",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/NotificationListener-class.html"
+  },
+  {
+    "name": "Builder",
+    "description": "A platonic widget that calls a closure to obtain its child widget.",
+    "youtubeVideoId": "xXNOkIuSYuA",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Builder-class.html"
+  },
+  {
+    "name": "ClipPath",
+    "description": "A widget that clips its child using a path.",
+    "youtubeVideoId": "oAUeb2a_XoI",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ClipPath-class.html"
+  },
+  {
+    "name": "CircularProgressIndicator and LinearProgressIndicator",
+    "description": "Material design progress indicators, which depict that the application is busy.",
+    "youtubeVideoId": "O-rhXZLtpv0",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html"
+  },
+  {
+    "name": "Divider",
+    "description": "A thin horizontal line, with padding on either side.",
+    "youtubeVideoId": "e-I4s9y_Y2M",
+    "documentationUrl": "https://api.flutter.dev/flutter/material/Divider-class.html"
+  },
+  {
+    "name": "IgnorePointer",
+    "description": "A widget that is invisible during hit testing.",
+    "youtubeVideoId": "qV9pqHWxYgI",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/IgnorePointer-class.html"
+  },
+  {
+    "name": "CupertinoActivityIndicator",
+    "description": "An iOS-style activity indicator that spins clockwise.",
+    "youtubeVideoId": "A-f0_1-jA4s",
+    "documentationUrl": "https://api.flutter.dev/flutter/cupertino/CupertinoActivityIndicator-class.html"
+  },
+  {
+    "name": "ClipOval",
+    "description": "A widget that clips its child using an oval.",
+    "youtubeVideoId": "vzWWDO6whIM",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/ClipOval-class.html"
+  },
+  {
+    "name": "AnimatedWidget",
+    "description": "A widget that rebuilds when the given Listenable changes value.",
+    "youtubeVideoId": "LKKgYpC-s2w",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html"
+  },
+  {
+    "name": "Padding",
+    "description": "A widget that insets its child by the given padding.",
+    "youtubeVideoId": "oD554l-TPGg",
+    "documentationUrl": "https://api.flutter.dev/flutter/widgets/Padding-class.html"
+  }
+]
