@@ -59,7 +59,9 @@ class _WidgetListPageState extends State<WidgetListPage> {
                 Expanded(
                   child: ListView.builder(
                     padding: const EdgeInsets.all(8.0),
-                    itemCount: state.guides.length,
+                    itemCount: state.guides.length > 20
+                        ? 20
+                        : state.guides.length,
                     itemBuilder: (context, index) {
                       final guide = state.guides[index];
                       return _buildWidgetListItem(context, guide);
