@@ -4,7 +4,7 @@ import 'package:widget_docs/features/ai_assistant/domain/repos/ai_assistant_repo
 class GetResponse {
   final AiAssistantRepo repo;
   GetResponse(this.repo);
-  Future<Message> call(String prompt) async {
-    return await repo.getResponse(prompt);
+  Future<Message> call(List<Message> messages) async {
+    return await repo.getResponse(messages);
   }
 }

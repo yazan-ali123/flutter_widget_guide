@@ -7,7 +7,7 @@ class AiAssistantRepoImbl extends AiAssistantRepo {
 
   AiAssistantRepoImbl(this.datasource);
   @override
-  Future<Message> getResponse(String prompt) async {
-    return await datasource.getAiResponse(prompt);
+  Future<Message> getResponse(List<Message> messages) async {
+    return await datasource.getAiResponse(messages);
   }
 }

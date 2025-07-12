@@ -18,7 +18,10 @@ class AiAssistantBloc extends Bloc<AiAssistantEvent, AiAssistantState> {
         ),
       );
       try {
-        final aiResponseText = await getResponse.call(event.message);
+        final aiResponseText = await getResponse.call([
+          ...state.messages,
+          Message(text: event.message, isUser: true),
+        ]);
 
         emit(
           state.copyWith(
