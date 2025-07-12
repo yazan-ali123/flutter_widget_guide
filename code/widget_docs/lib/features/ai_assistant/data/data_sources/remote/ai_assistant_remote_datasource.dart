@@ -12,11 +12,21 @@ class AiAssistantRemoteDataSourceImpl implements AiAssistantRemoteDataSource {
 
   @override
   Future<MessageModel> getAiResponse(String prompt) async {
+    final fullPrompt =
+        """
+You are a friendly and helpful Flutter expert named "Widget Bot".
+You are embedded in a Flutter widget guide application.
+Your goal is to provide clear, concise, and accurate answers about Flutter widgets and development.
+When you provide code examples, always make sure they are simple, correct, and formatted using Markdown code blocks (```dart ... ```).
+Keep your tone encouraging and supportive.
+
+User's question: "$prompt"
+""";
     final body = jsonEncode({
       'contents': [
         {
           'parts': [
-            {'text': prompt},
+            {'text': fullPrompt},
           ],
         },
       ],
@@ -33,7 +43,7 @@ class AiAssistantRemoteDataSourceImpl implements AiAssistantRemoteDataSource {
         isUser: false,
       );
     } else {
-      throw Exception('API request failed');
+      throw Exception(response.body);
     }
   }
 }
