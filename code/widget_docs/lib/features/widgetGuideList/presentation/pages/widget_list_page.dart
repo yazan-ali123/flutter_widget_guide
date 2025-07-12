@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:widget_docs/domain/entities/widget_guide.dart';
-import 'package:widget_docs/presentation/bloc/widget_guide_bloc.dart';
+import 'package:widget_docs/features/ai_assistant/presentation/pages/ai_assistant_page.dart';
+import 'package:widget_docs/features/widgetGuideList/domain/entities/widget_guide.dart';
+import 'package:widget_docs/features/widgetGuideList/presentation/bloc/widget_guide_bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:widget_docs/presentation/pages/widget_detail_page.dart';
+import 'package:widget_docs/features/widgetGuideList/presentation/pages/widget_detail_page.dart';
 
 class WidgetListPage extends StatefulWidget {
-  const WidgetListPage({Key? key}) : super(key: key);
+  const WidgetListPage({super.key});
 
   @override
   State<WidgetListPage> createState() => _WidgetListPageState();
@@ -32,6 +33,14 @@ class _WidgetListPageState extends State<WidgetListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.question_answer),
+        onPressed: () {
+          Navigator.of(
+            context,
+          ).push(MaterialPageRoute(builder: (context) => AiAssistantPage()));
+        },
+      ),
       appBar: AppBar(
         title: const Text('Flutter Widget Guide'),
         backgroundColor: Theme.of(context).colorScheme.primary,

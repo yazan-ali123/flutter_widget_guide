@@ -1,4 +1,4 @@
-import 'package:widget_docs/domain/entities/widget_guide.dart';
+import 'package:widget_docs/features/widgetGuideList/domain/entities/widget_guide.dart';
 
 class WidgetGuideModel extends WidgetGuide {
   const WidgetGuideModel({

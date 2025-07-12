@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:widget_docs/dep_injections.dart' as di;
-import 'package:widget_docs/presentation/bloc/widget_guide_bloc.dart';
-import 'package:widget_docs/presentation/pages/widget_list_page.dart';
+import 'package:widget_docs/features/ai_assistant/presentation/bloc/ai_assistant_bloc.dart';
+import 'package:widget_docs/features/widgetGuideList/presentation/bloc/widget_guide_bloc.dart';
+import 'package:widget_docs/features/widgetGuideList/presentation/pages/widget_list_page.dart';
 
 void main() {
   di.init();
-  runApp(const MyApp());
+  runApp(
+    MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (_) => di.sl<WidgetGuideBloc>()..add(FetchWidgetGuides()),
+        ),
+        BlocProvider(create: (context) => di.sl<AiAssistantBloc>()),
+      ],
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -29,11 +40,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: BlocProvider(
-        // Create the BLoC and add the initial event to fetch data
-        create: (_) => di.sl<WidgetGuideBloc>()..add(FetchWidgetGuides()),
-        child: const WidgetListPage(),
-      ),
+      home: const WidgetListPage(),
     );
   }
 }

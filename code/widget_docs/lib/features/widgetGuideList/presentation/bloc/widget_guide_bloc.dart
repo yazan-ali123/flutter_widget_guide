@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:widget_docs/domain/entities/widget_guide.dart';
-import 'package:widget_docs/domain/usecases/get_widget_guides.dart';
+import 'package:widget_docs/features/widgetGuideList/domain/entities/widget_guide.dart';
+import 'package:widget_docs/features/widgetGuideList/domain/usecases/get_widget_guides.dart';
 
 part 'widget_guide_event.dart';
 part 'widget_guide_state.dart';
