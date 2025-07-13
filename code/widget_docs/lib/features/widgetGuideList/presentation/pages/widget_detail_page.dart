@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:widget_docs/domain/entities/widget_guide.dart';
+import 'package:widget_docs/features/widgetGuideList/domain/entities/widget_guide.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class WidgetDetailPage extends StatefulWidget {
   final WidgetGuide guide;
 
-  const WidgetDetailPage({Key? key, required this.guide}) : super(key: key);
+  const WidgetDetailPage({super.key, required this.guide});
 
   @override
   State<WidgetDetailPage> createState() => _WidgetDetailPageState();
@@ -37,7 +37,6 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri.parse(url);
     if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
-      // Show a snackbar if the URL can't be launched
       if (mounted) {
         ScaffoldMessenger.of(
           context,
@@ -60,13 +59,12 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // YouTube Player
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12.0),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.2),
+                      color: Colors.black.withValues(alpha: 0.2),
                       spreadRadius: 1,
                       blurRadius: 10,
                       offset: const Offset(0, 4),
@@ -83,15 +81,12 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
                       playedColor: Colors.blue,
                       handleColor: Colors.blueAccent,
                     ),
-                    onReady: () {
-                      // Optional: add any logic to run when the player is ready.
-                    },
+                    onReady: () {},
                   ),
                 ),
               ),
               const SizedBox(height: 24),
 
-              // Description Section
               Text(
                 'Description',
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
@@ -108,7 +103,6 @@ class _WidgetDetailPageState extends State<WidgetDetailPage> {
               ),
               const SizedBox(height: 24),
 
-              // Documentation Button
               ElevatedButton.icon(
                 icon: const Icon(Icons.description_outlined),
                 label: const Text('View Official Docs'),

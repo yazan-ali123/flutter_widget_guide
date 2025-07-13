@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:widget_docs/data/models/widget_guide_model.dart';
+import 'package:widget_docs/features/widgetGuideList/data/models/widget_guide_model.dart';
 
 abstract class WidgetGuideLocalDataSource {
   Future<List<WidgetGuideModel>> getWidgetGuides();

@@ -1,5 +1,5 @@
-import 'package:widget_docs/domain/entities/widget_guide.dart';
-import 'package:widget_docs/domain/repos/widget_guide_repo.dart';
+import 'package:widget_docs/features/widgetGuideList/domain/entities/widget_guide.dart';
+import 'package:widget_docs/features/widgetGuideList/domain/repos/widget_guide_repo.dart';
 
 class GetWidgetGuides {
   final WidgetGuideRepo repo;
